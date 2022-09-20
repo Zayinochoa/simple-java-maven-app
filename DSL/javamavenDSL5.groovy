@@ -46,7 +46,7 @@ job('Java_Maven_App_DSL_5') {
     }
 }
 
-job('Job test Hola Mundo') {
+job('Job test Hola Mundo1') {
 	description('Aplicacion Hola Mundo de Prueba')
 	scm {
 		git('https://github.com/Zayinochoa/simple-java-maven-app.git', 'master') { node ->
@@ -59,7 +59,7 @@ job('Job test Hola Mundo') {
     	}    
 	steps {
 		shell('''
-			echo "Hola Mundo!!!!"
+			echo "Hola Mundo?!"
 		''')
 	}
 }
