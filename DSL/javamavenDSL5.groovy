@@ -20,7 +20,7 @@ job('Java_Maven_App_DSL_5') {
         }
         shell('''
           echo "Entrega: Desplegando la aplicación" 
-          java -jar "/var/jenkins_home/workspace/Java_App_con_Maven_4/target/my-app-1.0-SNAPSHOT.jar"
+          java -jar "/var/jenkins_home/workspace/Java_App_con_Maven_5/target/my-app-1.0-SNAPSHOT.jar"
         ''')  
     }
     publishers {
