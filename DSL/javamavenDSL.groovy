@@ -22,7 +22,7 @@ job('Java_Maven_App_DSL_1') {
     }
     publishers {
         archiveArtifacts('target/*.jar')
-        archiveJunit('target/surefire-reports/*.xml')
+        archiveJunit('**/target/surefire-reports/*.xml')
 	slackNotifier {
             notifyAborted(true)
             notifyEveryFailure(true)
